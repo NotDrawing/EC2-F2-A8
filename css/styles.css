@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra de Navegacion */
+nav.menu {
+  background-color: rgb(32, 39, 54);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  width: 100%;
+}
+
+.nav-brand {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.875rem;
+}
+
+nav.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav.menu a:hover {
+  color: #ccc;
+}
+
+/* Header */
+div.container-text {
+  background:
+    linear-gradient(rgba(62, 135, 218, 0.75), rgba(62, 135, 218, 0.75)),
+    url(../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 28rem;
+  margin: 0;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+div.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+div.text .text-box {
+  border: 2px solid white;
+  border-radius: 0.75rem;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+div.text h1.name {
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+div.text h2.profession {
+  margin: 0;
+  margin-top: 0.3rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+div.text button.btn-cv {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  background-color: orange;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+div.text button.btn-cv:hover {
+  background-color: darkorange;
+}
+
+div.text button.btn-cv i.fa-download {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Seccion Acerca de */
+#section-about {
+  padding-top: 0;
+}
+
+#section-about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+#section-about .photo {
+  margin-top: -6rem;
+  position: relative;
+  z-index: 1;
+}
+
+#section-about .photo img {
+  border-radius: 50%;
+  border: 0.6rem solid white;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#section-about .text {
+  padding-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#section-about .text h3 {
+  color: orange;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+#section-about .text p {
+  margin: 0;
+}
+
+/* Seccion trabajos */
+#section-jobs .container {
+  background-color: rgb(241, 241, 241);
+  padding-bottom: 2rem;
+}
+
+#section-jobs .container h3.title {
+  color: rgb(95, 148, 226);
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#section-jobs .container-jobs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+#section-jobs .job {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#section-jobs .job .thumb {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+}
+
+#section-jobs .job .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#section-jobs .job .description {
+  padding: 0.75rem;
+  text-align: center;
+}
+
+#section-jobs .job .description p.name {
+  color: rgb(95, 148, 226);
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+#section-jobs .job .description p.category {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Seccion habilidades */
+
+
+/* Footer */
+footer {
+  background: rgb(241, 241, 241);
+  color: rgb(95, 148, 226);
+  text-align: center;
+  padding: 0.625rem;
+  margin-top: 1.25rem;
+}
