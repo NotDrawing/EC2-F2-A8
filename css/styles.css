@@ -156,6 +156,7 @@ div.text button.btn-cv i.fa-download {
 
 #section-about .text p {
   margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 /* Seccion trabajos */
@@ -167,7 +168,7 @@ div.text button.btn-cv i.fa-download {
 #section-jobs .container h3.title {
   color: rgb(95, 148, 226);
   padding-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
   text-align: center;
 }
 
@@ -220,13 +221,156 @@ div.text button.btn-cv i.fa-download {
 }
 
 /* Seccion habilidades */
-
-
-/* Footer */
-footer {
-  background: rgb(241, 241, 241);
-  color: rgb(95, 148, 226);
+#section-skills .container h3.title {
+  color: orange;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
   text-align: center;
+}
+
+#section-skills .container-skills {
+  display: grid; /* ← mueve el grid aquí */
+  grid-template-columns: repeat(6, 1fr); /* ← 6 columnas */
+  gap: 1.5rem;
+  padding: 0 12rem;
+  padding-bottom: 2rem;
+}
+
+#section-skills .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ← centra icono y texto */
+  gap: 0.5rem;
+}
+
+#section-skills .skill .icon-skill {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-skills .skill .icon-skill img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ← mantiene proporciones del icono */
+}
+
+#section-skills .skill .description {
+  text-align: center;
+}
+
+#section-skills .skill .description p.name {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+#section-skills .skill .description p.category {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Footer - Contacto */
+#section-contact {
+  background: rgb(241, 241, 241);
+  padding: 1rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+#section-contact h3.title {
+  color: rgb(95, 148, 226);
+  margin-bottom: 1.5rem;
+}
+
+#section-contact .form-message {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#section-contact .form-message input[type="text"],
+#section-contact .form-message input[type="email"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#section-contact .form-message textarea {
+  grid-column: 1 / -1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  height: 8rem;
+  resize: vertical;
+  width: 100%;
+}
+
+#section-contact .form-message input[type="submit"] {
+  grid-column: 1 / -1;
+  padding: 0.75rem;
+  background-color: rgb(95, 148, 226);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#section-contact .form-message input[type="submit"]:hover {
+  background-color: rgb(62, 120, 200);
+}
+
+/* Footer - Social media */
+#section-social-media {
+  background: rgb(32, 39, 54);
+  padding: 1rem 0;
+}
+
+#section-social-media .container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   padding: 0.625rem;
-  margin-top: 1.25rem;
+}
+
+/* Colores de iconos footer */
+#section-social-media a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#section-social-media a.facebook {
+  color: #1877f2;
+}
+
+#section-social-media a.youtube {
+  color: #ff0000;
+}
+
+#section-social-media a.github {
+  color: white;
+}
+
+#section-social-media a:hover {
+  opacity: 0.7;
+}
+
+#section-social-media p {
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
 }
