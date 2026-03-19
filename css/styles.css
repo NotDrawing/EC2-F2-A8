@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-/* Barra de Navegacion */
+/* BARRA DE NAVEGACION */
 nav.menu {
   background-color: rgb(32, 39, 54);
   display: flex;
@@ -41,7 +41,7 @@ nav.menu a:hover {
   color: #ccc;
 }
 
-/* Header */
+/* HEADER */
 div.container-text {
   background:
     linear-gradient(rgba(62, 135, 218, 0.75), rgba(62, 135, 218, 0.75)),
@@ -66,7 +66,7 @@ div.text {
 }
 
 div.text .text-box {
-  border: 2px solid white;
+  border: 0.125rem solid white;
   border-radius: 0.75rem;
   padding: 1rem 2rem;
   text-align: center;
@@ -101,6 +101,7 @@ div.text button.btn-cv {
   transition: background-color 0.3s;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
 div.text button.btn-cv:hover {
@@ -108,12 +109,11 @@ div.text button.btn-cv:hover {
 }
 
 div.text button.btn-cv i.fa-download {
-  margin-right: 0.5rem;
   font-size: 1.5rem;
   line-height: 1;
 }
 
-/* Seccion Acerca de */
+/* SECCION ACERCA DE */
 #section-about {
   padding-top: 0;
 }
@@ -139,7 +139,7 @@ div.text button.btn-cv i.fa-download {
   height: 12rem;
   object-fit: cover;
   display: block;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
 }
 
 #section-about .text {
@@ -159,7 +159,7 @@ div.text button.btn-cv i.fa-download {
   margin-bottom: 1.5rem;
 }
 
-/* Seccion trabajos */
+/* SECCION TRABAJOS */
 #section-jobs .container {
   background-color: rgb(241, 241, 241);
   padding-bottom: 2rem;
@@ -186,7 +186,7 @@ div.text button.btn-cv i.fa-download {
   background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 #section-jobs .job .thumb {
@@ -220,7 +220,7 @@ div.text button.btn-cv i.fa-download {
   color: #666;
 }
 
-/* Seccion habilidades */
+/* SECCION HABILIDADES */
 #section-skills .container h3.title {
   color: orange;
   padding-top: 1rem;
@@ -229,8 +229,8 @@ div.text button.btn-cv i.fa-download {
 }
 
 #section-skills .container-skills {
-  display: grid; /* ← mueve el grid aquí */
-  grid-template-columns: repeat(6, 1fr); /* ← 6 columnas */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
   padding: 0 12rem;
   padding-bottom: 2rem;
@@ -239,7 +239,7 @@ div.text button.btn-cv i.fa-download {
 #section-skills .skill {
   display: flex;
   flex-direction: column;
-  align-items: center; /* ← centra icono y texto */
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -254,7 +254,7 @@ div.text button.btn-cv i.fa-download {
 #section-skills .skill .icon-skill img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* ← mantiene proporciones del icono */
+  object-fit: contain;
 }
 
 #section-skills .skill .description {
@@ -274,7 +274,7 @@ div.text button.btn-cv i.fa-download {
   color: #666;
 }
 
-/* Footer - Contacto */
+/* FOOTER - CONTACTO */
 #section-contact {
   background: rgb(241, 241, 241);
   padding: 1rem 2rem 2rem 2rem;
@@ -290,14 +290,14 @@ div.text button.btn-cv i.fa-download {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  max-width: 600px;
+  max-width: 37.5rem;
   margin: 0 auto;
 }
 
 #section-contact .form-message input[type="text"],
 #section-contact .form-message input[type="email"] {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 0.0625rem solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
   width: 100%;
@@ -306,7 +306,7 @@ div.text button.btn-cv i.fa-download {
 #section-contact .form-message textarea {
   grid-column: 1 / -1;
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 0.0625rem solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
   height: 8rem;
@@ -331,7 +331,7 @@ div.text button.btn-cv i.fa-download {
   background-color: rgb(62, 120, 200);
 }
 
-/* Footer - Social media */
+/* FOOTER - SOCIAL MEDIA */
 #section-social-media {
   background: rgb(32, 39, 54);
   padding: 1rem 0;
@@ -344,7 +344,6 @@ div.text button.btn-cv i.fa-download {
   padding: 0.625rem;
 }
 
-/* Colores de iconos footer */
 #section-social-media a {
   font-size: 1.5rem;
   text-decoration: none;
@@ -371,6 +370,331 @@ div.text button.btn-cv i.fa-download {
   color: white;
   text-align: center;
   margin: 0;
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+/* Mobile S — 320px */
+@media (max-width: 26.5rem) {
+
+  /* Nav */
+  nav.menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .nav-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  nav.menu a {
+    font-size: 0.875rem;
+  }
+
+  /* Header */
+  div.container-text {
+    min-height: 20rem;
+    padding-bottom: 2.5rem;
+  }
+
+  div.text .text-box {
+    padding: 0.75rem 1rem;
+  }
+
+  div.text h1.name {
+    font-size: 1.4rem;
+  }
+
+  div.text h2.profession {
+    font-size: 0.85rem;
+  }
+
+  div.text button.btn-cv {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.875rem;
+  }
+
+  /* About */
+  #section-about .photo img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  #section-about .photo {
+    margin-top: -4.5rem;
+  }
+
+  /* Jobs */
+  #section-jobs .container-jobs {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  #section-jobs .job .thumb {
+    height: 10rem;
+  }
+
+  /* Skills */
+  #section-skills .container-skills {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+    gap: 1.25rem;
+  }
+
+  #section-skills .skill .icon-skill {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  /* Contact */
+  #section-contact {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  #section-contact .form-message {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile M — 375px (23.4375rem) */
+@media (min-width: 23.4375rem) and (max-width: 26.5rem) {
+
+  div.text h1.name {
+    font-size: 1.5rem;
+  }
+
+  div.text h2.profession {
+    font-size: 0.9rem;
+  }
+
+  #section-jobs .container-jobs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #section-skills .container-skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile L — 425px (26.5625rem) */
+@media (min-width: 26.5625rem) and (max-width: 47.9375rem) {
+
+  /* Nav */
+  nav.menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* Header */
+  div.container-text {
+    min-height: 22rem;
+    padding-bottom: 2.5rem;
+  }
+
+  div.text h1.name {
+    font-size: 1.6rem;
+  }
+
+  div.text h2.profession {
+    font-size: 0.95rem;
+  }
+
+  /* About */
+  #section-about .photo img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #section-about .photo {
+    margin-top: -5rem;
+  }
+
+  /* Jobs */
+  #section-jobs .container-jobs {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1.25rem;
+    gap: 1.25rem;
+  }
+
+  #section-jobs .job .thumb {
+    height: 10rem;
+  }
+
+  /* Skills */
+  #section-skills .container-skills {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    gap: 1.25rem;
+  }
+
+  #section-skills .skill .icon-skill {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* Contact */
+  #section-contact .form-message {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet — 768px (48rem) */
+@media (min-width: 48rem) and (max-width: 63.9375rem) {
+
+  /* Nav */
+  nav.menu {
+    padding: 1rem 2rem;
+  }
+
+  .nav-brand {
+    font-size: 1.3rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+  }
+
+  /* Header */
+  div.container-text {
+    min-height: 24rem;
+  }
+
+  div.text h1.name {
+    font-size: 1.75rem;
+  }
+
+  div.text h2.profession {
+    font-size: 0.95rem;
+  }
+
+  /* About */
+  #section-about .photo img {
+    width: 11rem;
+    height: 11rem;
+  }
+
+  #section-about .photo {
+    margin-top: -5.5rem;
+  }
+
+  /* Jobs */
+  #section-jobs .container-jobs {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 1.5rem;
+  }
+
+  /* Skills */
+  #section-skills .container-skills {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 4rem;
+    padding-bottom: 2rem;
+  }
+
+  #section-skills .skill .icon-skill {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+/* Laptop — 1024px (64rem) */
+@media (min-width: 64rem) and (max-width: 89.9375rem) {
+
+  /* Jobs */
+  #section-jobs .container-jobs {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 2rem;
+  }
+
+  /* Skills */
+  #section-skills .container-skills {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 6rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Laptop L — 1440px (90rem) y superiores */
+@media (min-width: 90rem) {
+
+  /* Nav */
+  nav.menu {
+    padding: 1rem 4rem;
+  }
+
+  .nav-brand {
+    font-size: 1.5rem;
+  }
+
+  /* Header */
+  div.container-text {
+    min-height: 30rem;
+  }
+
+  div.text h1.name {
+    font-size: 2.5rem;
+  }
+
+  div.text h2.profession {
+    font-size: 1.2rem;
+  }
+
+  div.text button.btn-cv {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.25rem;
+  }
+
+  /* About */
+  #section-about .container {
+    padding: 0 6rem;
+  }
+
+  #section-about .photo img {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  #section-about .photo {
+    margin-top: -6.5rem;
+  }
+
+  /* Jobs */
+  #section-jobs .container-jobs {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 4rem;
+    gap: 2rem;
+  }
+
+  #section-jobs .job .thumb {
+    height: 14rem;
+  }
+
+  /* Skills */
+  #section-skills .container-skills {
+    grid-template-columns: repeat(8, 1fr);
+    padding: 0 8rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+  }
+
+  /* Contact */
+  #section-contact .form-message {
+    max-width: 50rem;
+  }
 }
